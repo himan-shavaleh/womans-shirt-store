@@ -1,0 +1,169 @@
+@import "config";
+@import "utilities";
+@import "navbar";
+@import "footer";
+@import "figure";
+@import "cartReview";
+@import "register";
+@import "responsive";
+.hidden {
+  transition: all 1s;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateY(-100%) scale(0) !important;
+  height: 0 !important;
+}
+#head {
+  padding: 13rem;
+  background: url(../../src/images/banner1.jpg) center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 3.2rem;
+    color: $color-danger;
+    background: rgba($color: $color-bisque, $alpha: 0.6);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 3rem $color-bisque;
+  }
+}
+#taking-to-you {
+  display: grid;
+  padding: 3rem;
+  h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .taks {
+    display: grid;
+    background: $color-primary;
+    padding: 2rem;
+    box-shadow: 0 0 2rem $color-primary;
+    border-radius: 2rem;
+    .tak {
+      margin: 2rem;
+      h4 {
+        font-size: 1.8rem;
+        color: $color-danger;
+      }
+      p {
+        font-size: 1.4rem;
+        color: $color-dark;
+      }
+    }
+  }
+}
+#products {
+  padding: 2rem;
+  background: $color-blue-light;
+
+  h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: $color-purple;
+  }
+  .products {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3.5rem 0.5rem;
+    .product {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      background: $color-light;
+      padding: 1rem;
+      border-radius: 2rem;
+      box-shadow: 0 0 2rem $color-gray;
+      position: relative;
+      transition: all 0.5s;
+      &:hover {
+        box-shadow: 0 0 3rem $color-dark;
+      }
+      img {
+        width: 100%;
+      }
+      .off {
+        position: absolute;
+        background: $color-danger;
+        padding: 0.5rem 2rem;
+        font-size: 2rem;
+        color: $color-light;
+        border-radius: 1rem;
+        top: -10px;
+        right: -10px;
+      }
+      p {
+        font-size: 1.6rem;
+        margin: 1rem;
+      }
+      .information {
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+        .nazar {
+          background: $color-purple;
+          //   letter-spacing: 1px;
+          padding: 0.5rem 2rem;
+          font-size: 1.6rem;
+          color: $color-light;
+          border-radius: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .prices {
+          display: flex;
+          flex-direction: column;
+          .oldPrice {
+            color: $color-dark;
+            font-size: 1.4rem;
+            position: relative;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 2px;
+              position: absolute;
+              background: $color-gray;
+              top: 50%;
+            }
+          }
+          .newPrice {
+            color: $color-danger;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+#pagination {
+  background: $color-blue-light;
+  margin: 2rem 0;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  .page {
+    padding: 0.5rem 1rem;
+    background: $color-light;
+    box-shadow: 0 0 10px $color-dark;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    transition: all 0.5rem;
+    &:hover {
+      background: $color-dark;
+      color: $color-light;
+    }
+    &.active {
+      background: $color-danger;
+      box-shadow: 0 0 10px $color-danger;
+    }
+  }
+}

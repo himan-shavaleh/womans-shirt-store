@@ -1,0 +1,121 @@
+@media screen and(min-width:600px) {
+  #products {
+    .products {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+}
+@media screen and(min-width:769px) {
+  #products {
+    .products {
+      grid-template-columns: 1fr 1fr 1fr !important;
+    }
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and(min-width:900px) {
+  #header {
+    .navbar {
+      gap: 3rem;
+      .toggler {
+        display: none;
+      }
+      .humburger {
+        display: none;
+      }
+      .nav {
+        visibility: visible;
+        transform: translateX(0);
+        background: transparent;
+        box-shadow: none;
+        position: static;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        justify-content: center;
+        width: 100%;
+        &__item {
+          margin: auto;
+          &.search {
+            width: 100%;
+          }
+        }
+
+        .menu {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          justify-content: flex-end !important;
+          width: 100%;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+  .account {
+    display: flex !important;
+  }
+  #products {
+    .products {
+      grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  #header {
+    .navbar {
+      .nav {
+        .menu {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          justify-content: flex-end !important;
+          width: 80%;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+  #products {
+    .products {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  #banners {
+    .static-banners {
+      display: flex !important;
+      .banner {
+        .banner-content {
+          h3 {
+            font-size: 2rem !important;
+          }
+        }
+      }
+    }
+    grid-template-columns: 1fr !important;
+    .slider {
+      .slide {
+        .content {
+          h3 {
+            font-size: 2.5rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:900px) {
+  .static-banners {
+    .banner {
+      .banner-content {
+        h3 {
+          font-size: 2rem !important;
+        }
+      }
+    }
+  }
+}

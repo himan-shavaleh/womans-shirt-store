@@ -1,0 +1,49 @@
+// tailwind
+
+// importing fonts
+@font-face {
+  font-family: "yekan";
+  src: url("../../src/fonts/yekan-regular.eot");
+  src: url("../../src/fonts/yekan-regular.eot?#iefix")
+      format("FontName-opentype"),
+    url("../../src/fonts/yekan-regular.woff") format("woff"),
+    url("../../src/fonts/yekan-regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// resets
+html {
+  font-size: 62.5%;
+}
+body {
+  //   box-sizing: border-box;
+  font-family: "yekan", sans-serif;
+  font-weight: bolder;
+  direction: rtl;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+// color wariables
+$color-light: #fff;
+$color-gray-light: #ccd6a6;
+$color-gray: #f0ebe3;
+$color-dark: #413f42;
+$color-danger: #fe7e6d;
+$color-blue-light: #e4fbff;
+$color-purple: #6f4a8e;
+$color-bisque: #fccbcb;
+$color-succes: #a7f726;
+$color-primary: #50e5b9;

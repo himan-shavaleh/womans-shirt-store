@@ -1,0 +1,47 @@
+#figure {
+  position: fixed;
+  bottom: 0;
+  padding: 0 2rem;
+  box-shadow: 0rem -1rem 1rem $color-blue-light;
+  left: 0;
+  //   right: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-danger;
+  width: 100vw;
+  a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: $color-dark;
+    font-size: 1.4rem;
+    position: relative;
+
+    span {
+      margin-top: 1rem;
+      text-align: center;
+      color: $color-gray;
+    }
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 1rem;
+      font-size: 3rem;
+      background: $color-light;
+      position: absolute;
+      top: -70%;
+      right: 0;
+      z-index: 10;
+      color: $color-danger !important;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  #figure {
+    display: none;
+  }
+}

@@ -1,0 +1,115 @@
+#footer {
+  background: $color-gray;
+  margin-top: 7rem;
+  position: relative;
+  .overlay {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 3rem;
+    background: $color-gray-light;
+    z-index: 1;
+    top: 10rem;
+    left: 2rem;
+    transform: rotate(10deg);
+  }
+  #top-footer {
+    display: grid;
+    position: relative;
+    z-index: 5;
+    padding: 3rem;
+    background-color: $color-gray;
+
+    .red {
+      background: $color-danger;
+      border-radius: 2rem;
+      position: relative;
+
+      top: -50px;
+      right: 0;
+      .title {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        h4 {
+          color: $color-light;
+          font-size: 2.5rem;
+        }
+      }
+      .content {
+        h5 {
+          font-size: 2rem;
+          color: $color-light;
+          margin: 2rem;
+        }
+        p {
+          font-size: 1.4rem;
+          padding: 2rem;
+          color: $color-light;
+        
+        }
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        a {
+          font-size: 2rem;
+          border: 1px solid $color-dark;
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+          transition: all 0.5s;
+          color: $color-light;
+          &:hover {
+            background: $color-light;
+            border: none;
+            color: $color-danger;
+            box-shadow: 0 0 1rem $color-light;
+          }
+        }
+      }
+    }
+    .footer-menu {
+      h4 {
+        font-size: 2.2rem;
+        margin: 1rem;
+        color: $color-dark;
+      }
+      ul {
+        li {
+          color: $color-purple;
+          font-size: 1.3rem;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  .bottom {
+    background: $color-gray;
+    position: relative;
+    display: flex;
+    z-index: 10;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    color: $color-dark;
+    font-size: 1.6rem;
+    border: 2px solid $color-light;
+  }
+}
+@media screen and (min-width: 900px) {
+  #footer {
+    #top-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between !important;
+      align-items: center;
+    }
+  }
+}

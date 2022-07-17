@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="per">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/about.css" />
+    <title>در باره ما و تماس با ما</title>
+  </head>
+  <body>
+
+    
+      <!-- login modal -->
+      <section id="login-modal">
+        <div class="colse-modal"></div>
+      <div class="box">
+          
+          <a href="#" class="close-modal"><i class='bx bx-window-close'></i></a>
+        <h1>ورود به سایت</h1>
+        <form class="form">
+          <p class="message mx-2 text-danger"></p>
+          <div class="input-group">
+            <span>شماره تلفن یا ایمیل</span>
+            <input type="text" id="userName" name="userName" />
+          </div>
+
+          <div class="input-group">
+            <span>رمز عبور</span>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div class="remember-group">
+            <input type="checkbox" id="remember" name="remember" />
+            <p>مرا به خاطر بسپار</p>
+          </div>
+          <a href="#" class="submit loginBtn">ورود</a>
+        </form>
+        <div class="signUp">
+            <p>اگر دارای اکانت نیستید از لینک زیر ثبت نام کنید</p>
+            <a href="./register.html" class="submit signUpBtn">ثبت نام</a>
+        </div>
+        <div class="social">
+          <h4>مارا در شبکه های اجتماعی دنبال کنید</h4>
+          <div class="social-icons">
+            <a href="#">
+              <i class="bx bxl-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of login modal -->
+  <!-- header menu -->
+   <!-- header menu -->
+   <header id="header">
+    <nav class="navbar">
+      <!-- menu toggler in mobile and tablet mode -->
+      <input type="checkbox" type="text" class="toggler" />
+      <!-- hamburger icon -->
+      <div class="humburger"><div></div></div>
+        <!-- logo link and image -->
+        <a href="./index.html" class="logo">
+          <img src="./src/images/logo-text.svg" alt="logo image" />
+        </a>
+      <!-- menu items -->
+      <ul class="nav">
+        <!-- this item is for search box -->
+        <li class="nav__item search">
+          <label for="search"><i class="bx bx-search-alt-2"></i></label>
+          <input type="search" name="search" id="search" />
+        </li>
+        <div class="menu">
+          <li class="nav__item">
+              <a href="./index.html" class="nav__item-link"> خانه </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item-link"> پیگیری سفارش </a>
+            </li>
+            <li class="nav__item orders">
+               
+                  <a href="#" class="nav__item-link"
+                  >محصولات<i class='bx bx-chevron-down'></i></a>
+     
+              
+                <ul class="orders-submenu hidden-orders-submenu">
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">بلوز</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">ست لباس</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">شلوار</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">سارافون</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">دامن</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="./sampleDraw.html" class="nav__item-link">نمونه دوخت</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__item-link">درباره ما</a>
+            </li>
+        </div>
+      
+      </ul>
+    
+      <!-- cart and account link and icon -->
+      <div class="cart-account-links">
+        <a href="#" class="account btn btn-danger">
+          ورود
+          <i class="bx bxs-user"></i>
+        
+        </a>
+       
+        <a href="#" class="cart">
+          <i class="bx bxs-cart-add"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+      <section id="top-section">
+          <div class="img">
+              <div class="overlay"></div>
+            <img src="./src/images/banner1.jpg" alt="">
+          </div>
+         <div class="content">
+             <h1>درباره ما</h1>
+            <p>یشینه فعالیت های ما به سال ۱۳۷۹ بر می گردد و پس از فراز و فرود های فرآوان در تیر ماه سال 1394 کار با برند افراتین را توسط جمع خانوادگی ۴ نفره و با سرمایه نه چندان چشمگیر و فقط دو مشتری از سر گرفتیم. افراتین با اندیشه خلق مرغوبترین محصولات مطابق با نیاز ، مد و اقتصاد طیف گسترده ای از اجتماع فعالیت های خود را با ترکیبی از با کیفیت ترین مواد اولیه و تلفیق آن با تجربه هنر و اشتیاق پرسنلی متخصص و با چشم انداز جهانی شدن به پیش می برد. تاکید بر آموزش و تقویت سرمایه های انسانی جهت بالا بردن سطح کیفی محصولات از مهمترین ارکان و اهداف افراتین است</p> 
+            <p class="btn btn-danger">با ما توی خونه هم رو مد باش</p>
+
+         </div>
+
+      </section>
+      <section id="bottom-section">
+          
+         <div class="content">
+             <h2>درباره ما</h2>
+            <p>یشینه فعالیت های ما به سال ۱۳۷۹ بر می گردد و پس از فراز و فرود های فرآوان در تیر ماه سال 1394 کار با برند افراتین را توسط جمع خانوادگی ۴ نفره و با سرمایه نه چندان چشمگیر و فقط دو مشتری از سر گرفتیم. افراتین با اندیشه خلق مرغوبترین محصولات مطابق با نیاز ، مد و اقتصاد طیف گسترده ای از اجتماع فعالیت های خود را با ترکیبی از با کیفیت ترین مواد اولیه و تلفیق آن با تجربه هنر و اشتیاق پرسنلی متخصص و با چشم انداز جهانی شدن به پیش می برد. تاکید بر آموزش و تقویت سرمایه های انسانی جهت بالا بردن سطح کیفی محصولات از مهمترین ارکان و اهداف افراتین است</p> 
+            <p class="btn btn-succes">با ما توی خونه هم رو مد باش</p>
+            
+         </div>
+         <div class="img">
+            <div class="overlay"></div>
+          <img src="./src/images/banner1.jpg" alt="">
+        </div>
+      </section>
+      <section id="contact-us">
+          <h2>با ما در تماس باشید</h2>
+          <div id="content">
+          <div class="contact-info">
+            <div class="info">
+                <i class='bx bx-home'></i>
+                <div class="info-content">
+                    <h3>آدرس</h3>
+                    <p>تهران - منطقه 2-شهرک اکباتان - بلوار عظیمی - محمدی 9-پلاک 12 -واحد 1</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class='bx bx-phone-call'></i>
+                <div class="info-content">
+                    <h3>شماره های تماس</h3>
+                    <p>09148383843</p>
+                    <p>04436642221</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class='bx bxs-envelope'></i>
+                <div class="info-content">
+                    <h3>ایمیل</h3>
+                    <p>himan.shavaleh@gmail.com</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class='bx bx-time'></i>
+                <div class="info-content">
+                    <h3>ساعات کاری</h3>
+                    <p>8 الی 16</p>
+                </div>
+            </div>
+          </div>
+          <div class="contact-form">
+              <form class="form">
+                  <div class="group">
+                      <div class="input-group">
+                        <label for="topic">موضوع پیام</label>
+                        <input placeholder="موضوع..." type="text" name="topic" id="topic">
+                      </div>
+                      <div class="input-group">
+                          <label for="name">نام و نام خانوادگی</label>
+                          <input placeholder="نام خود را بنویسید..." type="text" name="name" id="name">
+                      </div>
+                  </div>
+                  <div class="group">
+                      <div class="input-group">
+                        <label for="email">ایمیل</label>
+                        <input placeholder="ایمیل خود را وارد کنید" type="email" name="email" id="email">
+                      </div>
+                      <div class="input-group">
+                          <label for="phone">شماره تلفن</label>
+                          <input placeholder="شماره خود را وارد کنید" type="tel" name="phone" id="phone">
+                      </div>
+                      
+                  </div>
+                  <div class="group">
+                    <div class="input-group">
+                        <label for="message">متن پیام</label>
+                        <textarea placeholder="پیام خود را بنویسید" name="message" id="message"  rows="7"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="ارسال" class="btn btn-danger">
+              </form>
+          </div>
+        </div>
+      </section>
+  </main>
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="overlay"></div>
+        <section id="top-footer">
+            <article class="red">
+                <div class="title">
+                  <h4>
+                      مرغوب ترین و با کیفیت ترین ها را از ما بخواهید
+                    </h4>
+                    <img src="./src/images/footer-logo.png" alt="">
+                </div>
+                
+                <div class="content">
+                    <h5>کار ما چجوریه</h5>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، </p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-telegram' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+            </article>
+            <article class="footer-menu">
+              <h4>تماس با ما</h4>
+              <ul class="footer-contactUs">
+                  <li>09148383843</li>
+                  <li>021342322</li>
+                  <li>himan.shavaleh@gmail.com</li>
+                  <li>تهران-زعفرانیه-خیابان باهنر-برج شیرکو-پلاک2</li>
+              </ul>
+            </article>
+            <article class="footer-menu">
+              <h4>دسترسی سریع</h4>
+              <ul class="footer-contactUs">
+                  <li><a href="#">سفارشات</a></li>
+                  <li><a href="#">خانه</a></li>
+                  <li><a href="#">نمونه دوخت</a></li>
+                  <li><a href="#">درباره ما</a></li>
+              </ul>
+            </article>
+            
+        </section>
+        <div class="bottom">
+            <p>تمامی حقوق مادی و معنوی این وبسایت محفوظ است</p>
+        </div>
+    </footer>
+    <!--end of footer -->
+    <!-- figure for account management in mobile mode -->
+    <figure id="figure">
+      
+            <a href="#" class="profile account"><span class="icon"><i class="bx bxs-user"></i></span>
+              <span class="name-profile">پروفایل</span>
+          </a>
+            <a href="./index.html" class="home">
+                <span class="icon"><i class="bx bxs-home"></i></span>
+                
+                <span>خانه</span>
+            </a>
+            <a href="#" class="cart"><span class="icon"><i class="bx bxs-cart-add"></i></span>
+          <span>سبد خرید</span>
+          </a>
+        
+    </figure>
+
+    <script src="./src/js/stateManagement.js"></script>
+   
+    <script>
+      document.querySelectorAll('.submenuItems-link').forEach(link=>{
+        link.addEventListener('click',()=>{
+        window.location.href = '/category.html'
+        })
+      })
+    </script>
+  </body>
+</html>

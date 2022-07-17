@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/cart.css" />
+    <title>سبد خرید</title>
+</head>
+<body>
+    
+      <!-- login modal -->
+      <section id="login-modal">
+        <div class="colse-modal"></div>
+      <div class="box">
+          
+          <a href="#" class="close-modal"><i class='bx bx-window-close'></i></a>
+        <h1>ورود به سایت</h1>
+        <form class="form">
+          <p class="message mx-2 text-danger"></p>
+          <div class="input-group">
+            <span>شماره تلفن یا ایمیل</span>
+            <input type="text" id="userName" name="userName" />
+          </div>
+
+          <div class="input-group">
+            <span>رمز عبور</span>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div class="remember-group">
+            <input type="checkbox" id="remember" name="remember" />
+            <p>مرا به خاطر بسپار</p>
+          </div>
+          <a href="#" class="submit loginBtn">ورود</a>
+        </form>
+        <div class="signUp">
+            <p>اگر دارای اکانت نیستید از لینک زیر ثبت نام کنید</p>
+            <a href="./register.html" class="submit signUpBtn">ثبت نام</a>
+        </div>
+        <div class="social">
+          <h4>مارا در شبکه های اجتماعی دنبال کنید</h4>
+          <div class="social-icons">
+            <a href="#">
+              <i class="bx bxl-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of login modal -->
+  <!-- header menu -->
+  <!-- header menu -->
+  <header id="header">
+    <nav class="navbar">
+      <!-- menu toggler in mobile and tablet mode -->
+      <input type="checkbox" type="text" class="toggler" />
+      <!-- hamburger icon -->
+      <div class="humburger"><div></div></div>
+        <!-- logo link and image -->
+        <a href="./index.html" class="logo">
+          <img src="./src/images/logo-text.svg" alt="logo image" />
+        </a>
+      <!-- menu items -->
+      <ul class="nav">
+        <!-- this item is for search box -->
+        <li class="nav__item search">
+          <label for="search"><i class="bx bx-search-alt-2"></i></label>
+          <input type="search" name="search" id="search" />
+        </li>
+        <div class="menu">
+          <li class="nav__item">
+              <a href="./index.html" class="nav__item-link"> خانه </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item-link"> پیگیری سفارش </a>
+            </li>
+            <li class="nav__item orders">
+               
+                  <a href="#" class="nav__item-link"
+                  >محصولات<i class='bx bx-chevron-down'></i></a>
+     
+              
+                <ul class="orders-submenu hidden-orders-submenu">
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">بلوز</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">ست لباس</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">شلوار</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">سارافون</a>
+                  </li>
+                  <li class="orders-submenuItems">
+                    <a href="./category.html" class="submenuItems-link">دامن</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="./sampleDraw.html" class="nav__item-link">نمونه دوخت</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__item-link">درباره ما</a>
+            </li>
+        </div>
+      
+      </ul>
+    
+      <!-- cart and account link and icon -->
+      <div class="cart-account-links">
+        <a href="#" class="account btn btn-danger">
+          ورود
+          <i class="bx bxs-user"></i>
+        
+        </a>
+       
+        <a href="#" class="cart">
+          <i class="bx bxs-cart-add"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+
+
+<main id="main">
+    <section id="cartPage">
+        <div class="products">
+            <div class="product">
+                <img src="./src/images/10218.jpg" alt="pr 1">
+               <div class="product-info">
+                <div class="img-caption">
+
+                    <p>بادی آستین کوتاه زرد رنگ</p>
+                    <div class="controls">
+                        <span class="addMinus">
+                            <button class="plus"><i class="bx bx-plus"></i></button>
+                            <input type="text" name="#" id="number">
+                            <button class="minus"><i class="bx bx-minus"></i></button>
+                            
+                        </span>
+                        <span class="remove"><i class="bx bx-trash"></i></span>
+                    </div>
+                </div>
+                <div class="product-figure">
+
+                     <label for="size">سایز</label>
+                        <select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                    <div class="prices">
+                        <p class="perPrice">قیمت هر واحد <span>2000</span>تومان</p>
+                        <p class="sumPrice">قیمت کل : <span>400000</span>تومان</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="product">
+                <img src="./src/images/10218.jpg" alt="pr 1">
+               <div class="product-info">
+                <div class="img-caption">
+
+                    <p>بادی آستین کوتاه زرد رنگ</p>
+                    <div class="controls">
+                        <span class="addMinus">
+                            <button class="plus"><i class="bx bx-plus"></i></button>
+                            <input type="number" name="#" id="number">
+                            <button class="minus"><i class="bx bx-minus"></i></button>
+                            <span class="remove"><i class="bx bx-trash"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="product-figure">
+                    <label for="size">سایز</label>
+                    <select name="size" id="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <div class="prices">
+                        <p class="perPrice">قیمت هر واحد <span>2000</span>تومان</p>
+                        <p class="sumPrice">قیمت کل : <span>400000</span>تومان</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="information">
+            <div class="div">
+                <p>قیمت کالا ها</p>
+                <p>5,900,000تومان</p>
+            </div>
+            <div class="div">
+                <p>جمع</p>
+                <p>300000000تومان</p>
+            </div>
+            <div class="div">
+               <p>هزینه ارسال</p>
+                <p>رایگان</p>
+            </div> 
+            <div class="div">
+               <p>مبلغ قابل پرداخت</p>
+                <p>30000000تومان</p>
+            </div> 
+            <a href="#" class="btn btn-danger">ادامه فرآیند خرید</a>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+  
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="overlay"></div>
+        <section id="top-footer">
+            <article class="red">
+                <div class="title">
+                  <h4>
+                      مرغوب ترین و با کیفیت ترین ها را از ما بخواهید
+                    </h4>
+                    <img src="./src/images/footer-logo.png" alt="">
+                </div>
+                
+                <div class="content">
+                    <h5>کار ما چجوریه</h5>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، </p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-telegram' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+            </article>
+            <article class="footer-menu">
+              <h4>تماس با ما</h4>
+              <ul class="footer-contactUs">
+                  <li>09148383843</li>
+                  <li>021342322</li>
+                  <li>himan.shavaleh@gmail.com</li>
+                  <li>تهران-زعفرانیه-خیابان باهنر-برج شیرکو-پلاک2</li>
+              </ul>
+            </article>
+            <article class="footer-menu">
+              <h4>دسترسی سریع</h4>
+              <ul class="footer-contactUs">
+                  <li><a href="#">سفارشات</a></li>
+                  <li><a href="#">خانه</a></li>
+                  <li><a href="#">نمونه دوخت</a></li>
+                  <li><a href="#">درباره ما</a></li>
+              </ul>
+            </article>
+            
+        </section>
+        <div class="bottom">
+            <p>تمامی حقوق مادی و معنوی این وبسایت محفوظ است</p>
+        </div>
+    </footer>
+    <!--end of footer -->
+    <!-- figure for account management in mobile mode -->
+    <figure id="figure">
+      
+            <a href="#" class="profile account"><span class="icon"><i class="bx bxs-user"></i></span>
+              <span class="name-profile">پروفایل</span>
+          </a>
+            <a href="./index.html" class="home">
+                <span class="icon"><i class="bx bxs-home"></i></span>
+                
+                <span>خانه</span>
+            </a>
+            <a href="#" class="cart"><span class="icon"><i class="bx bxs-cart-add"></i></span>
+          <span>سبد خرید</span>
+          </a>
+        
+    </figure>
+
+
+    <script src="src/js/stateManagement.js"></script>
+    <script>
+      document.querySelectorAll('.submenuItems-link').forEach(link=>{
+        link.addEventListener('click',()=>{
+        window.location.href = '/category.html'
+        })
+      })
+    </script>
+</body>
+</html>

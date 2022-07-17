@@ -1,0 +1,53 @@
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+// btn class
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.6rem;
+  // font-weight: 800;
+  &:hover {
+    background: none;
+  }
+}
+.btn-danger {
+  background: $color-danger;
+  color: $color-light;
+  &:hover {
+    border: 1px solid $color-danger;
+    color: $color-danger;
+  }
+}
+.btn-gray {
+  background: $color-gray;
+  color: $color-dark;
+  &:hover {
+    background: $color-dark;
+    // border: 1px solid $color-danger;
+    color: $color-light;
+  }
+}
+.btn-succes {
+  background: $color-succes;
+  color: $color-purple;
+  &:hover {
+    background: $color-dark;
+    // border: 1px solid $color-danger;
+    color: $color-succes;
+    border: 1px solid $color-succes;
+  }
+}
+// this class is for hide and show orders submenu
+.hidden-orders-submenu {
+  display: none !important;
+}

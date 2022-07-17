@@ -1,0 +1,8 @@
+@import "config";
+@import "utilities";
+@import "register";
+#login-modal {
+  margin: 0 !important;
+  padding: 3rem;
+  display: flex !important;
+}

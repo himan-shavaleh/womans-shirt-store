@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icon link cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- linking css -->
+    <link rel="stylesheet" href="css/signUp.css" />
+    <title>ثبت نام در سایت</title>
+  </head>
+  <body>
+    <section id="login-modal">
+      <div class="box">
+        <a href="./index.html">بازگشت به صفحه اصلی</a>
+        <h1>ثبت نام</h1>
+        <form class="form">
+          <div class="input-group">
+            <span>نام</span>
+            <input type="text" id="first-name" name="firstName" />
+          </div>
+          <div class="input-group">
+            <span>نام خانوادگی</span>
+            <input type="text" id="last-name" name="lastName" />
+          </div>
+          <div class="input-group">
+            <span>ایمیل</span>
+            <input type="email" id="email" name="email" />
+            <span class="emailMessage my-1 text-danger"></span>
+          </div>
+          <div class="input-group">
+            <span>شماره تلفن</span>
+            <input type="tel" id="phone" name="phone" />
+            <span class="phoneMessage my-1 text-danger"></span>
+          </div>
+          <div class="input-group">
+            <span>رمز عبور</span>
+            <input type="password" id="password" name="password" />
+            <span class="passMessage my-1 text-danger"
+              >شامل یک حرف بزرگ یک حرف کوچک وعدد (حداقل 7 کاراکتر)</span
+            >
+          </div>
+          <div class="input-group">
+            <span>تکرار رمز عبور</span>
+            <input type="password" id="repass" name="repass" />
+            <span class="repassMessage my-1 text-danger"></span>
+          </div>
+          <a href="#" class="submit registerBtn">ثبت نام</a>
+        </form>
+      </div>
+    </section>
+
+    <script src="./src/js/register.js"></script>
+  </body>
+</html>
+

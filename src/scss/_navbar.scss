@@ -1,0 +1,239 @@
+#header {
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  left: 0;
+  width: 100vw;
+  z-index: 100000;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 1rem 0 1rem $color-dark;
+    background: $color-light;
+    // toggler check box
+    .toggler {
+      position: absolute;
+      right: 0rem;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      opacity: 0;
+      z-index: 3;
+      //   rotating menu icon when hover
+      &:checked:hover ~ .humburger > div {
+        transform: rotate(400deg);
+      }
+      &:checked ~ .humburger > div {
+        width: 30px;
+        transform: rotate(45deg);
+        &::before {
+          display: none;
+        }
+        &::after {
+          top: 0;
+          transform: rotate(270deg);
+        }
+      }
+      // opening menu when cheched
+      &:checked ~ .nav {
+        visibility: visible;
+        transform: translateX(0);
+      }
+    }
+    //  humbergur icon styling
+    .humburger {
+      z-index: 2;
+      position: relative;
+      right: 0rem;
+      box-shadow: 0 0 0.4rem $color-dark;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        transition: all 0.5s;
+        width: 20px;
+        height: 3px;
+        left: 2px;
+        background: $color-dark;
+        position: absolute;
+        &::before {
+          width: 10px;
+          height: 3px;
+          background: $color-dark;
+          position: absolute;
+          top: 8px;
+          left: 0;
+          content: "";
+        }
+        &::after {
+          width: 30px;
+          height: 3px;
+          background: $color-dark;
+          position: absolute;
+          top: -8px;
+          left: 0;
+          content: "";
+        }
+      }
+    }
+    // cart and account links stles
+    .cart-account-links {
+      display: flex;
+      gap: 1rem;
+      .account-review {
+        position: absolute;
+        z-index: 10;
+        top: 150%;
+        width: auto;
+        transition: all 0.5s;
+        // visibility: hidden;
+        top: 115%;
+        left: 4rem;
+        background: $color-gray;
+        box-shadow: 8px 8px 8px $color-gray-light,
+          -8px -8px 8px $color-gray-light;
+        border-radius: 2.5rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+      }
+      .account {
+        display: none;
+      }
+      .cart {
+        position: relative;
+        i {
+          font-size: 4rem;
+          color: $color-dark;
+          transition: all 0.5s;
+          &:hover {
+            color: $color-danger;
+          }
+        }
+        .cart-quantity {
+          position: absolute;
+          background: red;
+          font-size: 1.4rem;
+          color: $color-light;
+          top: 0;
+          left: 30%;
+          padding: 0.2rem 0.4rem;
+          border-radius: 50%;
+        }
+      }
+    }
+    // menu in mobile and tablet mode
+    .nav {
+      position: absolute;
+      top: 100%;
+      background: rgba($color: $color-gray, $alpha: 0.9);
+      width: 100vw;
+      right: 0;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //   filter: hue-rotate(120%);
+      transform: translateX(100%);
+      transition: all 0.5s;
+      visibility: hidden;
+      box-shadow: inset 0 0 3rem $color-dark;
+      z-index: 1000;
+      .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10001;
+      }
+      &__item {
+        margin-bottom: 3rem;
+        // search box
+        &.search {
+          position: relative;
+          //   margin-bottom: 3rem !important;
+          input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.6rem;
+            // background: $color-blue-light;
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+            box-shadow: inset 1.5rem 1.5rem 2rem $color-blue-light,
+              inset -1rem -1rem 2rem
+                rgba($color: $color-blue-light, $alpha: 0.5);
+            color: $color-dark;
+          }
+          label {
+            cursor: pointer;
+            position: absolute;
+            left: 1rem;
+            top: 15%;
+            font-size: 1.8rem;
+            color: $color-danger;
+          }
+        }
+
+        // orders sub menu styling
+        &.orders {
+          position: relative;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            i {
+              font-size: 2.6rem;
+            }
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background: rgba($color: $color-light, $alpha: 0.9);
+            padding: 2rem;
+            width: 150px;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba($color: $color-dark, $alpha: 0.3);
+            li {
+              a {
+                font-size: 1.5rem;
+                color: $color-danger;
+                margin: 1rem;
+                transition: all 0.5s;
+                &:hover {
+                  color: $color-dark;
+                }
+              }
+            }
+          }
+        }
+        &-link {
+          font-size: 1.6rem;
+          color: $color-dark;
+          transition: all 0.3s;
+          &:hover {
+            color: $color-danger;
+            box-shadow: 0 2px 0 $color-danger;
+          }
+        }
+      }
+    }
+  }
+}
